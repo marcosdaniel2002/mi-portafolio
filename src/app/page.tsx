@@ -94,10 +94,10 @@ export default function Home() {
       {/* Contenedor tipo hoja A4 */}
       <div className="max-w-[210mm] mx-auto bg-white shadow-lg">
         {/* Header - Datos Personales con Foto */}
-        <header className="bg-slate-800 text-white p-8">
-          <div className="flex items-center gap-6">
+        <header className="bg-slate-800 text-white p-6 sm:p-8">
+          <div className="flex flex-col md:flex-row items-center gap-6">
             {/* Foto de perfil */}
-            <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0">
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0">
               <Image
                 src="/images/MI_FOTO.JPEG"
                 alt="Foto de perfil"
@@ -108,14 +108,31 @@ export default function Home() {
             </div>
 
             {/* Información personal */}
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold mb-2">Marcos Teran</h1>
-              <p className="text-xl text-slate-300 mb-4">{t.role}</p>
-              <div className="flex flex-wrap gap-4 text-sm">
-                <span>📧 mteranc@unemi.edu.ec</span>
-                <span>📱 +593 96 136 6408</span>
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="text-3xl sm:text-4xl font-bold mb-2">
+                Marcos Teran
+              </h1>
+              <p className="text-lg sm:text-xl text-slate-300 mb-4">{t.role}</p>
+              <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm justify-center md:justify-start">
+                <a
+                  href="mailto:mteranc@unemi.edu.ec"
+                  className="hover:text-slate-300 transition-colors"
+                >
+                  📧 mteranc@unemi.edu.ec
+                </a>
+                <a
+                  href="tel:+593961366408"
+                  className="hover:text-slate-300 transition-colors"
+                >
+                  📱 +593 96 136 6408
+                </a>
                 <span>📍 Guayaquil, Ecuador</span>
-                <a href="https://github.com/marcosdaniel2002" target="_blank">
+                <a
+                  href="https://github.com/marcosdaniel2002"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-300 transition-colors"
+                >
                   🔗 github.com/marcosdaniel2002
                 </a>
               </div>
