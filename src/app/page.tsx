@@ -36,13 +36,14 @@ export default function Home() {
           "Plataforma de música similar a Spotify, crea tu playlist, reproduce música, escucha las mejores 50 músicas del momento.",
       },
       project2: {
-        title: "NATOURS",
+        title: "WORLD WISE",
         description:
-          "Aplicación de gestión de reservaciones para realizar un tour.",
+          "Un mapa mundial que rastrea tus pasos en cada ciudad que puedas imaginar. Nunca olvides tus maravillosas experiencias y muéstrale a tus amigos cómo has recorrido el mundo.",
       },
       project3: {
-        title: "FAST REACT PIZZA",
-        description: "Aplicación para buscar tu pizza favorita y ordenarla.",
+        title: "PRYCHAT",
+        description:
+          "Aplicación de mensajería instantánea donde puedes comunicarte con amigos y contactos en tiempo real de forma rápida y sencilla.",
       },
       footer: "Todos los derechos reservados.",
     },
@@ -76,12 +77,14 @@ export default function Home() {
           "Music platform similar to Spotify, create your playlist, play music, listen to the top 50 songs of the moment.",
       },
       project2: {
-        title: "NATOURS",
-        description: "Booking management application for tours.",
+        title: "WORLD WISE",
+        description:
+          "A world map that tracks your footsteps into every city you can think of. Never forget your wonderful experiences, and show your friends how you have wandered the world.",
       },
       project3: {
-        title: "FAST REACT PIZZA",
-        description: "Application to find your favorite pizza and order it.",
+        title: "PRYCHAT",
+        description:
+          "Instant messaging application where you can communicate with friends and contacts in real time, quickly and easily.",
       },
       footer: "All rights reserved.",
     },
@@ -293,14 +296,14 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* NATOURS */}
+              {/* WORLD WISE */}
               <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="font-semibold text-lg text-gray-700">
                     {t.project2.title}
                   </h3>
                   <a
-                    href="https://natours-k5xw.onrender.com/"
+                    href="https://world-wise-mu.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 whitespace-nowrap"
@@ -324,22 +327,22 @@ export default function Home() {
                 <p className="text-gray-700 mb-3">{t.project2.description}</p>
                 <div className="flex gap-2 flex-wrap">
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
-                    Node.js
+                    React
                   </span>
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
-                    MongoDB
+                    Tailwind
                   </span>
                 </div>
               </div>
 
-              {/* FAST REACT PIZZA */}
+              {/* PRYCHAT */}
               <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="font-semibold text-lg text-gray-700">
                     {t.project3.title}
                   </h3>
                   <a
-                    href="https://fast-react-pizza-three.vercel.app/"
+                    href="https://prychat-mauve.vercel.app/auth/login"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 whitespace-nowrap"
@@ -363,10 +366,16 @@ export default function Home() {
                 <p className="text-gray-700 mb-3">{t.project3.description}</p>
                 <div className="flex gap-2 flex-wrap">
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
-                    ReactJS
+                    Next.js
                   </span>
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
                     Tailwind
+                  </span>
+                  <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
+                    PostgreSQL
+                  </span>
+                  <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
+                    Node.js
                   </span>
                 </div>
               </div>
