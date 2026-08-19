@@ -31,16 +31,21 @@ export default function Home() {
       projectsTitle: "Proyectos",
       viewDemo: "Ver Demo",
       project1: {
+        title: "STOCKREACT",
+        description:
+          "Sistema de manejo de inventario con facturación electrónica, notas de crédito y retenciones. Incluye control de entrada y salida de existencias para una gestión completa del stock.",
+      },
+      project2: {
         title: "O SOUNDZ",
         description:
           "Plataforma de música similar a Spotify, crea tu playlist, reproduce música, escucha las mejores 50 músicas del momento.",
       },
-      project2: {
+      project3: {
         title: "WORLD WISE",
         description:
           "Un mapa mundial que rastrea tus pasos en cada ciudad que puedas imaginar. Nunca olvides tus maravillosas experiencias y muéstrale a tus amigos cómo has recorrido el mundo.",
       },
-      project3: {
+      project4: {
         title: "PRYCHAT",
         description:
           "Aplicación de mensajería instantánea donde puedes comunicarte con amigos y contactos en tiempo real de forma rápida y sencilla.",
@@ -72,16 +77,21 @@ export default function Home() {
       projectsTitle: "Projects",
       viewDemo: "View Demo",
       project1: {
+        title: "STOCKREACT",
+        description:
+          "Inventory management system with electronic invoicing, credit notes, and tax withholdings. Includes stock entry and exit tracking for complete inventory control.",
+      },
+      project2: {
         title: "O SOUNDZ",
         description:
           "Music platform similar to Spotify, create your playlist, play music, listen to the top 50 songs of the moment.",
       },
-      project2: {
+      project3: {
         title: "WORLD WISE",
         description:
           "A world map that tracks your footsteps into every city you can think of. Never forget your wonderful experiences, and show your friends how you have wandered the world.",
       },
-      project3: {
+      project4: {
         title: "PRYCHAT",
         description:
           "Instant messaging application where you can communicate with friends and contacts in real time, quickly and easily.",
@@ -257,14 +267,14 @@ export default function Home() {
               {t.projectsTitle}
             </h2>
             <div className="space-y-4">
-              {/* O SOUNDZ */}
+              {/* STOCKREACT */}
               <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="font-semibold text-lg text-gray-700">
                     {t.project1.title}
                   </h3>
                   <a
-                    href="https://o-soundz.vercel.app/"
+                    href="https://template.stockreact-ec.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 whitespace-nowrap"
@@ -288,22 +298,28 @@ export default function Home() {
                 <p className="text-gray-700 mb-3">{t.project1.description}</p>
                 <div className="flex gap-2 flex-wrap">
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
-                    ReactJS
+                    Next.js
                   </span>
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
-                    Redux
+                    NestJS
+                  </span>
+                  <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
+                    Prisma
+                  </span>
+                  <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
+                    PostgreSQL
                   </span>
                 </div>
               </div>
 
-              {/* WORLD WISE */}
+              {/* O SOUNDZ */}
               <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="font-semibold text-lg text-gray-700">
                     {t.project2.title}
                   </h3>
                   <a
-                    href="https://world-wise-mu.vercel.app/"
+                    href="https://o-soundz.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 whitespace-nowrap"
@@ -327,6 +343,45 @@ export default function Home() {
                 <p className="text-gray-700 mb-3">{t.project2.description}</p>
                 <div className="flex gap-2 flex-wrap">
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
+                    ReactJS
+                  </span>
+                  <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
+                    Redux
+                  </span>
+                </div>
+              </div>
+
+              {/* WORLD WISE */}
+              <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="font-semibold text-lg text-gray-700">
+                    {t.project3.title}
+                  </h3>
+                  <a
+                    href="https://world-wise-mu.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 whitespace-nowrap"
+                  >
+                    {t.viewDemo}
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <p className="text-gray-700 mb-3">{t.project3.description}</p>
+                <div className="flex gap-2 flex-wrap">
+                  <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
                     React
                   </span>
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
@@ -339,7 +394,7 @@ export default function Home() {
               <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="font-semibold text-lg text-gray-700">
-                    {t.project3.title}
+                    {t.project4.title}
                   </h3>
                   <a
                     href="https://prychat-mauve.vercel.app/auth/login"
@@ -363,7 +418,7 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-                <p className="text-gray-700 mb-3">{t.project3.description}</p>
+                <p className="text-gray-700 mb-3">{t.project4.description}</p>
                 <div className="flex gap-2 flex-wrap">
                   <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">
                     Next.js
