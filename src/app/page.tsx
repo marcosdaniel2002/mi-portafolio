@@ -38,6 +38,19 @@ const projectLinks = [
   { url: "https://prychat-mauve.vercel.app/auth/login", tags: ["Next.js", "Tailwind", "PostgreSQL", "Node.js"] },
 ];
 
+// Convierte los fragmentos marcados con **texto** en negrilla
+function richText(text: string) {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+    i % 2 === 1 ? (
+      <strong key={i} className="font-semibold text-gray-900">
+        {part}
+      </strong>
+    ) : (
+      part
+    )
+  );
+}
+
 export default function Home() {
   const [language, setLanguage] = useState<"es" | "en">("es");
 
@@ -46,7 +59,7 @@ export default function Home() {
       role: "Desarrollador Web Full Stack",
       aboutTitle: "Sobre mí",
       aboutText:
-        "Desarrollador Full Stack con experiencia en JavaScript (React.js) y Python (Django), creando aplicaciones web robustas y escalables bajo arquitecturas de software como n-tier, hexagonal y clean architecture, con sólida aplicación de patrones de microservicios y micro frontends para sistemas desacoplados y mantenibles. Hábil en el diseño de APIs RESTful, manejo de bases de datos relacionales (PostgreSQL) y despliegue de aplicaciones, aplicando TDD (Test-Driven Development) para garantizar calidad y cobertura desde las primeras etapas del desarrollo. Metodologías ágiles Scrum, colaborando en equipos multidisciplinarios con entregas iterativas y enfoque en mejora continua.",
+        "Desarrollador **Full Stack** con experiencia en **JavaScript (React.js) y Python (Django)**, creando aplicaciones web robustas y escalables bajo arquitecturas de software como **n-tier, hexagonal y clean architecture**, con sólida aplicación de **patrones de microservicios y micro frontends** para sistemas desacoplados y mantenibles. Hábil en el diseño de **APIs RESTful**, manejo de **bases de datos relacionales (PostgreSQL)** y **despliegue de aplicaciones**, aplicando **TDD (Test-Driven Development)** para garantizar calidad y cobertura desde las primeras etapas del desarrollo. Metodologías ágiles **Scrum**, colaborando en equipos multidisciplinarios con entregas iterativas y enfoque en mejora continua.",
       experienceTitle: "Experiencia",
       experiences: [
         {
@@ -55,13 +68,13 @@ export default function Home() {
           location: "Sangolquí, Pichincha",
           date: "Febrero 2025 - Actualidad",
           description:
-            "Desarrollé módulos estratégicos con PostgreSQL, Django, HTML, CSS y JavaScript, incluyendo salvoconductos, encuestas institucionales, integración con Moodle, dashboards analíticos y paneles administrativos, asumiendo la responsabilidad técnica de extremo a extremo.",
+            "Desarrollé módulos estratégicos con **PostgreSQL, Django, HTML, CSS y JavaScript**, incluyendo **salvoconductos, encuestas institucionales, integración con Moodle, dashboards analíticos y paneles administrativos**, asumiendo la **responsabilidad técnica de extremo a extremo**.",
           highlights: [
-            "Reduje en un 35% el tiempo de gestión de salvoconductos al digitalizar y automatizar el flujo completo.",
-            "Aumenté la participación estudiantil en encuestas, alcanzando más de 500 respuestas con una interfaz optimizada e intuitiva.",
-            "Automaticé alrededor de 15 tareas recurrentes del personal administrativo mediante dashboards y paneles centralizados.",
-            "Mejoré la adopción de la plataforma Moodle al integrar 3 procesos académicos clave.",
-            "Logré una valoración positiva de 4 de cada 5 usuarios internos con módulos alineados a sus necesidades operativas.",
+            "**Reduje en un 35%** el tiempo de gestión de salvoconductos al digitalizar y automatizar el flujo completo.",
+            "Aumenté la participación estudiantil en encuestas, alcanzando **más de 500 respuestas** con una interfaz optimizada e intuitiva.",
+            "**Automaticé alrededor de 15 tareas recurrentes** del personal administrativo mediante dashboards y paneles centralizados.",
+            "Mejoré la adopción de la plataforma Moodle al **integrar 3 procesos académicos clave**.",
+            "Logré una **valoración positiva de 4 de cada 5 usuarios** internos con módulos alineados a sus necesidades operativas.",
           ],
         },
         {
@@ -70,11 +83,11 @@ export default function Home() {
           location: "Cuenca, Azuay",
           date: "Agosto 2026 - Septiembre 2026",
           description:
-            "Contribuí a la evolución del sistema gestor documental Quipux como referente técnico en el diseño e implementación de módulos críticos de backup automatizado, envío de correos personalizados, gestión dinámica de destinatarios y rediseño del flujo de creación de usuarios.",
+            "Contribuí a la evolución del **sistema gestor documental Quipux** como **referente técnico** en el diseño e implementación de módulos críticos de **backup automatizado, envío de correos personalizados, gestión dinámica de destinatarios** y rediseño del flujo de creación de usuarios.",
           highlights: [
-            "Reduje en un 40% el tiempo de alta de usuarios y disminuí en un 25% las solicitudes de soporte asociadas.",
-            "Bajé en un 35% los incidentes por pérdida o corrupción de información con el sistema de backups automatizados.",
-            "Aumenté en un 50% la eficiencia del envío de notificaciones institucionales, reduciendo errores de entrega en un 30%.",
+            "**Reduje en un 40%** el tiempo de alta de usuarios y **disminuí en un 25%** las solicitudes de soporte asociadas.",
+            "**Bajé en un 35%** los incidentes por pérdida o corrupción de información con el sistema de backups automatizados.",
+            "**Aumenté en un 50%** la eficiencia del envío de notificaciones institucionales, **reduciendo errores de entrega en un 30%**.",
           ],
         },
         {
@@ -83,7 +96,7 @@ export default function Home() {
           location: "Sangolquí, Pichincha",
           date: "Mayo 2026 - Julio 2026",
           description:
-            "Desarrollé y publiqué una app móvil con Flutter para Android e iOS orientada a la gestión de acceso institucional: los estudiantes inician sesión, visualizan su carnet digital y consultan sus clases; los administrativos generan códigos QR y los guardias los escanean desde la misma app para registrar entradas y salidas.",
+            "Desarrollé y publiqué una **app móvil** con **Flutter** para **Android** e **iOS** orientada a la **gestión de acceso institucional**: los estudiantes inician sesión, visualizan su carnet digital y consultan sus clases; los administrativos generan **códigos QR** y los guardias los escanean desde la misma app para **registrar entradas y salidas**.",
           highlights: [],
         },
         {
@@ -92,11 +105,11 @@ export default function Home() {
           location: "Milagro, Guayas",
           date: "Septiembre 2024 - Noviembre 2024",
           description:
-            "Como desarrollador especializado en Django, participé en la creación de un módulo de gestión de auditorías, asumiendo el diseño e implementación de funcionalidades de seguimiento de registros y generación de reportes detallados.",
+            "Como desarrollador especializado en **Django**, participé en la creación de un módulo de **gestión de auditorías**, asumiendo el diseño e implementación de funcionalidades de **seguimiento de registros y generación de reportes** detallados.",
           highlights: [
-            "Integré Apache Kafka como microservicio para el streaming de eventos de auditoría en tiempo real, reduciendo en un 40% el tiempo de generación de reportes.",
-            "Implementé Apache Superset para habilitar dashboards interactivos que facilitan el seguimiento y la trazabilidad de las auditorías.",
-            "Optimicé consultas e integración con la base de datos, mejorando la eficiencia del sistema y la precisión del análisis.",
+            "Integré **Apache Kafka** como **microservicio** para el streaming de eventos de auditoría en tiempo real, **reduciendo en un 40%** el tiempo de generación de reportes.",
+            "Implementé **Apache Superset** para habilitar **dashboards interactivos** que facilitan el seguimiento y la trazabilidad de las auditorías.",
+            "**Optimicé consultas** e integración con la base de datos, mejorando la eficiencia del sistema y la precisión del análisis.",
           ],
         },
       ] as Experience[],
@@ -155,7 +168,7 @@ export default function Home() {
       role: "Full Stack Web Developer",
       aboutTitle: "About Me",
       aboutText:
-        "Full Stack Developer with experience in JavaScript (React.js) and Python (Django), building robust and scalable web applications using software architectures such as n-tier, hexagonal and clean architecture, with solid use of microservices and micro frontends patterns for decoupled, maintainable systems. Skilled in RESTful API design, relational databases (PostgreSQL) and application deployment, applying TDD (Test-Driven Development) to ensure quality and coverage from the earliest stages of development. Experienced with Agile Scrum, collaborating in cross-functional teams with iterative delivery and a focus on continuous improvement.",
+        "**Full Stack** Developer with experience in **JavaScript (React.js) and Python (Django)**, building robust and scalable web applications using software architectures such as **n-tier, hexagonal and clean architecture**, with solid use of **microservices and micro frontends patterns** for decoupled, maintainable systems. Skilled in **RESTful API** design, **relational databases (PostgreSQL)** and **application deployment**, applying **TDD (Test-Driven Development)** to ensure quality and coverage from the earliest stages of development. Experienced with Agile **Scrum**, collaborating in cross-functional teams with iterative delivery and a focus on continuous improvement.",
       experienceTitle: "Experience",
       experiences: [
         {
@@ -164,13 +177,13 @@ export default function Home() {
           location: "Sangolquí, Pichincha",
           date: "February 2025 - Present",
           description:
-            "Built strategic modules with PostgreSQL, Django, HTML, CSS and JavaScript, including safe-conduct passes, institutional surveys, Moodle integration, analytics dashboards and admin panels, taking end-to-end technical ownership.",
+            "Built strategic modules with **PostgreSQL, Django, HTML, CSS and JavaScript**, including **safe-conduct passes, institutional surveys, Moodle integration, analytics dashboards and admin panels**, taking **end-to-end technical ownership**.",
           highlights: [
-            "Cut safe-conduct processing time by 35% by digitizing and automating the entire workflow.",
-            "Increased student survey participation to over 500 responses with an optimized, intuitive interface.",
-            "Automated around 15 recurring administrative tasks through centralized dashboards and panels.",
-            "Improved Moodle adoption by integrating 3 key academic processes.",
-            "Achieved positive ratings from 4 out of 5 internal users with modules aligned to their operational needs.",
+            "**Cut safe-conduct processing time by 35%** by digitizing and automating the entire workflow.",
+            "Increased student survey participation to **over 500 responses** with an optimized, intuitive interface.",
+            "**Automated around 15 recurring administrative tasks** through centralized dashboards and panels.",
+            "Improved Moodle adoption by **integrating 3 key academic processes**.",
+            "Achieved **positive ratings from 4 out of 5 internal users** with modules aligned to their operational needs.",
           ],
         },
         {
@@ -179,11 +192,11 @@ export default function Home() {
           location: "Cuenca, Azuay",
           date: "August 2026 - September 2026",
           description:
-            "Contributed to the evolution of the Quipux document management system as technical lead for the design and implementation of critical modules: automated backups, personalized email delivery, dynamic recipient management and a redesigned user onboarding flow.",
+            "Contributed to the evolution of the **Quipux document management system** as **technical lead** for the design and implementation of critical modules: **automated backups, personalized email delivery, dynamic recipient management** and a redesigned user onboarding flow.",
           highlights: [
-            "Reduced user onboarding time by 40% and related support requests by 25%.",
-            "Lowered data loss and corruption incidents by 35% with the automated backup system.",
-            "Increased institutional notification efficiency by 50%, reducing delivery errors by 30%.",
+            "**Reduced user onboarding time by 40%** and related support requests **by 25%**.",
+            "Lowered data loss and corruption incidents **by 35%** with the automated backup system.",
+            "Increased institutional notification efficiency **by 50%**, **reducing delivery errors by 30%**.",
           ],
         },
         {
@@ -192,7 +205,7 @@ export default function Home() {
           location: "Sangolquí, Pichincha",
           date: "May 2026 - July 2026",
           description:
-            "Built and published a Flutter mobile app for Android and iOS for institutional access control: students sign in, view their digital ID card and check their classes; staff generate QR codes, and security guards scan them from the same app to log entries and exits.",
+            "Built and published a **Flutter mobile app** for **Android** and **iOS** for **institutional access control**: students sign in, view their digital ID card and check their classes; staff generate **QR codes**, and security guards scan them from the same app to **log entries and exits**.",
           highlights: [],
         },
         {
@@ -201,11 +214,11 @@ export default function Home() {
           location: "Milagro, Guayas",
           date: "September 2024 - November 2024",
           description:
-            "As a Django-focused developer, I helped build an audit management module, owning the design and implementation of record tracking and detailed report generation features.",
+            "As a **Django**-focused developer, I helped build an **audit management** module, owning the design and implementation of **record tracking and detailed report generation** features.",
           highlights: [
-            "Integrated Apache Kafka as a microservice for real-time audit event streaming, reducing report generation time by 40%.",
-            "Implemented Apache Superset to deliver interactive dashboards for audit tracking and traceability.",
-            "Optimized database queries and integration, improving system efficiency and analysis accuracy.",
+            "Integrated **Apache Kafka** as a **microservice** for real-time audit event streaming, **reducing report generation time by 40%**.",
+            "Implemented **Apache Superset** to deliver **interactive dashboards** for audit tracking and traceability.",
+            "**Optimized database queries** and integration, improving system efficiency and analysis accuracy.",
           ],
         },
       ] as Experience[],
@@ -340,7 +353,7 @@ export default function Home() {
           {/* Sobre mí */}
           <section>
             <h2 className={sectionTitle}>{t.aboutTitle}</h2>
-            <p className="text-gray-700 leading-relaxed">{t.aboutText}</p>
+            <p className="text-gray-700 leading-relaxed">{richText(t.aboutText)}</p>
           </section>
 
           {/* Experiencia */}
@@ -358,11 +371,11 @@ export default function Home() {
                   <p className="text-gray-600 italic mb-2">
                     {exp.company} · {exp.location}
                   </p>
-                  <p className="text-gray-700">{exp.description}</p>
+                  <p className="text-gray-700">{richText(exp.description)}</p>
                   {exp.highlights.length > 0 && (
                     <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-700 text-sm">
                       {exp.highlights.map((h) => (
-                        <li key={h}>{h}</li>
+                        <li key={h}>{richText(h)}</li>
                       ))}
                     </ul>
                   )}
