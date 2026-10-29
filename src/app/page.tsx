@@ -66,7 +66,7 @@ export default function Home() {
           title: "Desarrollador Web",
           company: "Tecnológico Rumiñahui",
           location: "Sangolquí, Pichincha",
-          date: "Febrero 2025 - Actualidad",
+          date: "Diciembre 2024 - Actualidad",
           description:
             "Desarrollé módulos estratégicos con **PostgreSQL, Django, HTML, CSS y JavaScript**, incluyendo **salvoconductos, encuestas institucionales, integración con Moodle, dashboards analíticos y paneles administrativos**, asumiendo la **responsabilidad técnica de extremo a extremo**.",
           highlights: [
@@ -81,7 +81,7 @@ export default function Home() {
           title: "Desarrollador Web Freelancer",
           company: "Universidad de Cuenca",
           location: "Cuenca, Azuay",
-          date: "Agosto 2026 - Septiembre 2026",
+          date: "Agosto 2026 - Noviembre 2026",
           description:
             "Contribuí a la evolución del **sistema gestor documental Quipux** como **referente técnico** en el diseño e implementación de módulos críticos de **backup automatizado, envío de correos personalizados, gestión dinámica de destinatarios** y rediseño del flujo de creación de usuarios.",
           highlights: [
@@ -94,7 +94,7 @@ export default function Home() {
           title: "Desarrollador Mobile Freelancer",
           company: "Tecnológico Rumiñahui",
           location: "Sangolquí, Pichincha",
-          date: "Mayo 2026 - Julio 2026",
+          date: "Mayo 2026 - Agosto 2026",
           description:
             "Desarrollé y publiqué una **app móvil** con **Flutter** para **Android** e **iOS** orientada a la **gestión de acceso institucional**: los estudiantes inician sesión, visualizan su carnet digital y consultan sus clases; los administrativos generan **códigos QR** y los guardias los escanean desde la misma app para **registrar entradas y salidas**.",
           highlights: [],
@@ -103,7 +103,7 @@ export default function Home() {
           title: "Asistente de Desarrollo",
           company: "Universidad Estatal de Milagro",
           location: "Milagro, Guayas",
-          date: "Septiembre 2024 - Noviembre 2024",
+          date: "Septiembre 2024 - Diciembre 2024",
           description:
             "Como desarrollador especializado en **Django**, participé en la creación de un módulo de **gestión de auditorías**, asumiendo el diseño e implementación de funcionalidades de **seguimiento de registros y generación de reportes** detallados.",
           highlights: [
@@ -175,7 +175,7 @@ export default function Home() {
           title: "Web Developer",
           company: "Tecnológico Rumiñahui",
           location: "Sangolquí, Pichincha",
-          date: "February 2025 - Present",
+          date: "December 2024 - Present",
           description:
             "Built strategic modules with **PostgreSQL, Django, HTML, CSS and JavaScript**, including **safe-conduct passes, institutional surveys, Moodle integration, analytics dashboards and admin panels**, taking **end-to-end technical ownership**.",
           highlights: [
@@ -190,7 +190,7 @@ export default function Home() {
           title: "Freelance Web Developer",
           company: "Universidad de Cuenca",
           location: "Cuenca, Azuay",
-          date: "August 2026 - September 2026",
+          date: "August 2026 - November 2026",
           description:
             "Contributed to the evolution of the **Quipux document management system** as **technical lead** for the design and implementation of critical modules: **automated backups, personalized email delivery, dynamic recipient management** and a redesigned user onboarding flow.",
           highlights: [
@@ -203,7 +203,7 @@ export default function Home() {
           title: "Freelance Mobile Developer",
           company: "Tecnológico Rumiñahui",
           location: "Sangolquí, Pichincha",
-          date: "May 2026 - July 2026",
+          date: "May 2026 - August 2026",
           description:
             "Built and published a **Flutter mobile app** for **Android** and **iOS** for **institutional access control**: students sign in, view their digital ID card and check their classes; staff generate **QR codes**, and security guards scan them from the same app to **log entries and exits**.",
           highlights: [],
@@ -212,7 +212,7 @@ export default function Home() {
           title: "Development Assistant",
           company: "Universidad Estatal de Milagro",
           location: "Milagro, Guayas",
-          date: "September 2024 - November 2024",
+          date: "September 2024 - December 2024",
           description:
             "As a **Django**-focused developer, I helped build an **audit management** module, owning the design and implementation of **record tracking and detailed report generation** features.",
           highlights: [
